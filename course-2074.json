@@ -2,30 +2,30 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "2026f-autotest/2026f-oscamp-base-Alayfolk64",
-  "commit": "aebc7f117dac12b038429ccb19194cdcc72451a4",
-  "score": 0,
+  "commit": "99065c9d2a0673eb8860f36245675e46c637e3da",
+  "score": 11,
   "totalScore": 100,
   "exercises": [
     {
       "name": "thread_spawn",
       "max": 3,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 3,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "mutex_counter",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "channel",
       "max": 4,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 4,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "process_pipe",
@@ -176,9 +176,9 @@
     }
   ],
   "student": "Alayfolk64",
-  "runId": "34780362121",
-  "runAttempt": "2",
+  "runId": "34781684490",
+  "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
