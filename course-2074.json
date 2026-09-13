@@ -2,7 +2,7 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "2026f-autotest/2026f-oscamp-base-Alayfolk64",
-  "commit": "c186632aaa9b15452078445298d8aac7fac30cc5",
+  "commit": "aebc7f117dac12b038429ccb19194cdcc72451a4",
   "score": 0,
   "totalScore": 100,
   "exercises": [
@@ -176,5 +176,9 @@
     }
   ],
   "student": "Alayfolk64",
-  "runId": "34775995308"
+  "runId": "34780362121",
+  "runAttempt": "1",
+  "upload": {
+    "status": "pending"
+  }
 }
