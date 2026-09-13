@@ -43,3 +43,11 @@ python3 -m unittest discover -s .github/tests
 在仓库根目录运行 16 项定向回归；`-s` 指定测试目录，测试不创建真实远程仓库或上传课程分数。Python 语法、两份工作流的 YAML 解析及 `git diff --check` 均通过。
 
 维护者本地原始证据位于 `tmp/enroll-Alayfolk64.log`、`tmp/template-run-34775608460.log`、`tmp/student-push-34775686458.log`、`tmp/student-push-34775995308.log`。每次 GitHub 运行也上传完整结果 JSON、逐项原始日志和 Cargo.lock；当前成绩明细在学员仓库 `gh-pages:course-2074.json`。
+
+## 秋冬季页面与排行榜核对
+
+2026-09-14 只读核对 [OpenCamp 基础阶段](https://opencamp.cn/os2edu/camp/2026fall/stage/4) 的公开页面数据，课程编号为 2074。按该页面使用的排行榜查询接口核对，`Alayfolk64` 的记录为 0 分，与真实 CI 测得及上传的分数一致。浏览器完整表格受自动化连接限制，未声称完成视觉验收。未修改 OpenCamp 后台。
+
+## 自助领取
+
+统一入口 [2026f-autotest/enroll](https://github.com/2026f-autotest/enroll) 已启用；本课程已用维护者账号验证新 Issue 自动触发、识别申请人、配置仓库、回复链接及配置检查成功。该次沿用已有课程仓库；外部学员接受邀请尚未用第二个账号实测。见[入口验证记录](https://github.com/2026f-autotest/enroll/blob/main/docs/VALIDATION.md)。
