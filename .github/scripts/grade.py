@@ -13,6 +13,7 @@ def main():
     output = ROOT / "tmp/grade"
     output.mkdir(parents=True, exist_ok=True)
     os.environ["TMPDIR"] = str(ROOT / "tmp")
+    os.environ["CARGO_TARGET_DIR"] = str(ROOT / "tmp/target")
     # Resolve infrastructure/dependency failures before awarding any course score.
     subprocess.run(["cargo", "fetch", "--locked"], check=True)
     results = []

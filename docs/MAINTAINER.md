@@ -9,6 +9,7 @@
 | 组织 Secret | `OSCAMP_2026F_BASE_TOKEN` |
 | 学员变量 | `STUDENT_GITHUB` |
 | 学员仓库 | `2026f-autotest/2026f-oscamp-base-GitHub登录名` |
+| Rust 工具链 | `1.98.1`，与首次真实 CI 一致 |
 
 ## 1. 维护者配置一次
 
@@ -39,6 +40,8 @@ python3 enroll.py
 脚本检查模板、组织权限、共享 Secret 与学员账号，然后创建公开学员仓库，设置 `STUDENT_GITHUB`，分配写入权限，并主动触发配置检查。重复执行保留已有代码和身份。只接入一人也可运行 `python3 enroll.py 学员GitHub登录名`。
 
 初次模板生成 push 时尚未绑定学员，CI 会跳过；配置完成后脚本触发 **Check student configuration**。它只检查身份和 Token 是否存在，不调用 OpenCamp。学员接受邀请后按[提交指南](STUDENT_GUIDE.md)开始实验。
+
+组织 Secret 和首个学员仓库的共享读取已实际验证。若 GitHub 排队期间身份变量已经写入，初次生成的 push 也可能直接开始评测；上传仍要求触发账号等于分配的学员。
 
 ## 3. 核对自动评测和上传
 
